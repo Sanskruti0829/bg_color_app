@@ -1,0 +1,41 @@
+<html>
+  <head>
+     	<title>color app by sanskruti</title>
+   	<style> 
+		*{font-size:50px;}
+	</style>
+     
+ </head>
+
+ <body>
+	<center>
+     	<h2>choose color</h2<>
+  	<form onsubmit="col()">
+		<input type="submit"  value="Red"/>
+		<input type="submit"  value="Green"/>
+		<input type="submit"  value="Blue"/>
+	</form>
+        <script>
+		function col()
+  		{
+   			event.preventDefault();
+			let action=document.activeElement.value;
+			
+			if(action==="Red")
+		document.body.style.backgroundColor="red";
+			
+			else if(action==="Green")
+		document.body.style.backgroundColor="green";
+			
+
+			else if(action==="Blue")
+		document.body.style.backgroundColor="blue";
+
+		} 
+               
+
+	</script>
+    
+	</center>
+ </body>
+</html>
